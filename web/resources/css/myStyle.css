@@ -1,0 +1,16 @@
+
+h3{
+    font-family: Gothic;
+    font-size: 18px;
+    color:whitesmoke;
+    position: relative;
+}
+
+body{
+    font-family: Gothic;
+    font-size: 14px;
+    color:whitesmoke;
+    position: relative;
+    background-image:  url("Img/kulting.jpg"); 
+}
+

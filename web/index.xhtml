@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      >
+
+    <h:head> 
+        <title>Calculator</title>
+        <h:outputStylesheet library="css" name="myStyle.css"/>
+        <h:outputScript library="js" name="myJs.js"/>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h3>Simple Calculator</h3>
+
+            <h:panelGrid columns="2">
+                <h:outputLabel for="parameter1" value="Number 1"/>
+                <h:inputText id="parameter1" value='#{mathBean.parameter1}'/>
+                <h:outputLabel for="parameter2" value="Number 2"/>
+                <h:inputText id="parameter2" value='#{mathBean.parameter2}'/><br/>
+            </h:panelGrid>
+            <h:panelGroup>
+                <h:commandButton value="addition" action='#{mathBean.add}'/>
+                <h:commandButton value="subtraction" action='#{mathBean.subtract}'/>
+                <h:commandButton value="multiplication" action='#{mathBean.multiply}'/>
+                <h:commandButton value="division" action='#{mathBean.divide}'/><br/><br/>
+            </h:panelGroup>
+            <h:outputLabel for="result" value="Result"/>
+            <h:inputText id="result" value='#{mathBean.result}'/>
+        </h:form>        
+    </h:body>
+</html>
+
